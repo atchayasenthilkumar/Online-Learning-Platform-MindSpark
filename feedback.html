@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+body{
+background-color : lightblue;
+}
+</style>
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+</head>
+<body>
+
+    <h2>Feedback Form</h2>
+    <p>Please provide your feedback below:</p>
+
+    <form action="submit_feedback.php" method="POST">
+        <!-- Name Field -->
+        <label for="name">Your Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <!-- Email Field -->
+        <label for="email">Your Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+        
+        <!--Course Field-->
+        <label for="course">Course:</label><br>
+        <input type="course" id="course" name="course" required><br><br>
+
+
+
+        <!-- Feedback Textarea -->
+        <label for="feedback">Your Feedback:</label><br>
+        <textarea id="feedback" name="feedback" rows="4" cols="50" required></textarea><br><br>
+
+        <!-- Rating Field -->
+        <label for="rating">Rate us (1-5):</label><br>
+        <input type="radio" id="rating1" name="rating" value="1"> 1
+        <input type="radio" id="rating2" name="rating" value="2"> 2
+        <input type="radio" id="rating3" name="rating" value="3"> 3
+        <input type="radio" id="rating4" name="rating" value="4"> 4
+        <input type="radio" id="rating5" name="rating" value="5"> 5<br><br>
+
+       <button action="Submit">
+       <a href= "file:///C:/Users/ATCHAYA%20S/Desktop/Full%20STACK/CSS/concept/windowalert.html " >Submit Feedback</a>
+            </form>
+
+</body>
+</html>
